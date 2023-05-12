@@ -1,0 +1,159 @@
+body {
+  margin: 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #d2d1d4;
+}
+
+.container {
+  height: 80vh;
+  margin: 10vh auto;
+  width: auto;
+}
+
+.phone {
+  position: relative;
+}
+
+.phone {
+  display: block;
+  border: 1.334vh solid #111;
+  border-radius: 4.5vh;
+  height: 500px;
+  width: 233px;
+  background: #f6f6f6;
+}
+
+.phone .notch-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #5c6068;
+  border-top-left-radius: 3.32vh;
+  border-top-right-radius: 3.32vh;
+  z-index: 100;
+}
+
+.phone .notch-container .notch {
+  width: 20vh;
+  height: 4.25vh;
+  margin: 0 auto;
+  background-color: #111;
+  border-bottom-left-radius: 2.334vh;
+  border-bottom-right-radius: 2.334vh;
+}
+
+.phone .chat {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 3.334vh;
+  overflow: hidden;
+  background-color: #5c6068;
+}
+
+.phone .chat .head-chat {
+  display: flex;
+  width: auto;
+  height: 11vh;
+  min-height: 73px;
+  background-color: #f4f4f4;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.phone .chat .head-chat .circle {
+  display: flex;
+  justify-content: center;
+  border-radius: 5em;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  background-color: #6f3dff;
+  margin: 0.2em;
+}
+
+.phone .chat .head-chat .circle img {
+  width: 80%;
+  height: 80%;
+}
+
+.phone .chat .head-chat .name {
+  font-size: 18px;
+  margin-bottom: 0.7em;
+  color: #6f3dff;
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.phone .chat .head-chat .name div {
+  display: flex;
+  width: 179px;
+  max-height: 40px;
+}
+
+.phone .chat .fondo-chat {
+  width: 100%;
+  height: 377px;
+  background-image: url("../public/assets/background/fondo.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.phone .chat .fondo-chat .conversation-chat {
+  min-height: 30px;
+  display: flex;
+  margin: 4px 6px;
+  padding: 0 5px;
+  align-items: center;
+  border-radius: 7px;
+  flex-wrap: wrap;
+}
+
+.phone .chat .form-chat {
+  width: 100%;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+.phone .chat .form-chat input {
+  border: 0.5px solid #aaaaaa;
+  padding: 0 5px 0 5px;
+  height: 25px;
+  width: 70%;
+  border-radius: 3px;
+}
+
+.phone .chat .form-chat button {
+  border: 0.5px solid #aaaaaa;
+  padding: 0 5px 0 5px;
+  background: #6f3dff;
+  width: 25px;
+  height: 25px;
+  border-radius: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone .chat .form-chat button img {
+  width: 132%;
+  transform: rotate(32deg) translate(-2px, 2px);
+}
+
+input:focus,
+input.form-control:focus {
+  outline: none !important;
+  border-color: #808080;
+  box-shadow: 0 0 3px #808080;
+}

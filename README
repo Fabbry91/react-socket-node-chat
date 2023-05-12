@@ -1,0 +1,7 @@
+socket.io comunicador bi drieccional permite iniciar la comunicacion desde el servidor 
+cors
+morgan
+nodemon
+
+/* permite el uso del import from*/
+  "type":"module", > package.json
